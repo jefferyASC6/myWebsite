@@ -20,7 +20,7 @@ header{
     padding-left: 30px;
     padding-right: 30px;
     font-family: 'Roboto Condensed', sans-serif;
-    border-bottom: solid 3px white;
+    border-bottom: solid 2px white;
 }
 
 .button{
@@ -42,7 +42,7 @@ button:hover{
 }
 
 .strip{
-    border-bottom: solid 3px white;
+    border-bottom: solid 2px white;
     color: white;
     font-family: 'Roboto Condensed', sans-serif;
     padding-right: 80px;
@@ -97,4 +97,63 @@ button:hover{
             rgba(0,0,0,0)
         ),
         url(assets/binary-code.jpg);
+}
+
+.aboutWriteUp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: 
+        linear-gradient(
+            to left,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ),
+        url(assets/ocean.jpg);
+    border-bottom: solid 1px white;
+}
+
+.interestsWriteUp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: 
+        linear-gradient(
+            to left,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ),
+        url(assets/football-field.jpg);
+    border-bottom: solid 2px white;
+}
+
+.projectsWriteUp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: 
+        linear-gradient(
+            to left,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ),
+        url(assets/binary-code.jpg);
+    border-bottom: solid 2px white;
+}
+
+.textWriteUp{
+    background-color: rgba(0,0,0,0.75);
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 50px;
+}
+
+.pageText{
+    font-weight: 300;
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-left:30px;
+    padding-right: 30px;
 }
