@@ -1,0 +1,100 @@
+body{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-flow: column wrap;
+    background-color: black;
+}
+
+header{
+    display: flex;
+    background: black;
+}
+
+#homeStrip{
+    display: flex;
+    background-color: black;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: 'Roboto Condensed', sans-serif;
+    border-bottom: solid 3px white;
+}
+
+.button{
+    border: solid 2px white;
+    border-radius: 5px;
+    color: white;
+    background-color: rgba(0,0,0,0);
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+button:hover{
+    background-color: rgba(255,255,255,0.5);
+    /* filter: invert(100%); */
+    color: white;
+    border: solid 2px white;
+}
+
+.strip{
+    border-bottom: solid 3px white;
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding-right: 80px;
+    padding-left: 80px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.text{
+    font-weight: 300;
+}
+
+#aboutStrip{
+    display: flex;
+    justify-content: flex-end;
+    flex-flow: column wrap;
+    align-items: flex-end;
+    text-align: right;
+    background-image: 
+        linear-gradient(
+            to left,
+            rgba(0,0,0,1),
+            rgba(0,0,0,0)
+        ),
+        url(assets/ocean.jpg);
+}
+
+#interestsStrip{
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    background-image: 
+        linear-gradient(
+            to right,
+            rgba(0,0,0,1),
+            rgba(0,0,0,0)
+        ),
+        url(assets/football-field.jpg);
+}
+
+#projectsStrip{
+    display: flex;
+    justify-content: flex-end;
+    flex-flow: column wrap;
+    align-items: flex-end;
+    text-align: right;
+    background-image: 
+        linear-gradient(
+            to left,
+            rgba(0,0,0,1),
+            rgba(0,0,0,0)
+        ),
+        url(assets/binary-code.jpg);
+}
