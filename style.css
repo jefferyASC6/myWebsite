@@ -123,8 +123,28 @@ button:hover{
             rgba(0,0,0,0.5),
             rgba(0,0,0,0.5)
         ),
-        url(assets/football-field.jpg);
+        url(assets/nameplate2.jpg);
     border-bottom: solid 2px white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.interestsWriteUp2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: 
+        linear-gradient(
+            to left,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ),
+        url(assets/books.jpg);
+    border-bottom: solid 2px white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .projectsWriteUp{
@@ -145,7 +165,12 @@ button:hover{
     background-color: rgba(0,0,0,0.75);
     color: white;
     font-family: 'Roboto Condensed', sans-serif;
-    margin: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    /* height: 90%; */
+    width: 90%;
+    line-height: 1.6;
+    text-indent: 30px;
 }
 
 .pageText{
@@ -156,4 +181,18 @@ button:hover{
     margin-bottom: 30px;
     padding-left:30px;
     padding-right: 30px;
+}
+
+.video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid 2px white;
+    background-image: 
+        linear-gradient(
+            to left,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ),
+        url(assets/football-field.jpg);
 }
