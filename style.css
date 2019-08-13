@@ -4,12 +4,17 @@ body{
     justify-content: center;
     flex-flow: column wrap;
     background-color: black;
+    margin: 0px;
 }
+
+/* currently unused header */
 
 header{
     display: flex;
     background: black;
 }
+
+/* what appears on the top of the page */
 
 #homeStrip{
     display: flex;
@@ -21,7 +26,10 @@ header{
     padding-right: 30px;
     font-family: 'Roboto Condensed', sans-serif;
     border-bottom: solid 2px white;
+    flex-direction: column;
 }
+
+/* buttons on home page */
 
 .button{
     border: solid 2px white;
@@ -41,6 +49,8 @@ button:hover{
     border: solid 2px white;
 }
 
+/* each strip on home page */
+
 .strip{
     border-bottom: solid 2px white;
     color: white;
@@ -54,6 +64,8 @@ button:hover{
 .text{
     font-weight: 300;
 }
+
+/* about strip on home page */
 
 #aboutStrip{
     display: flex;
@@ -70,6 +82,8 @@ button:hover{
         url(assets/ocean.jpg);
 }
 
+/* interests strip on home page */
+
 #interestsStrip{
     display: flex;
     justify-content: flex-start;
@@ -83,6 +97,8 @@ button:hover{
         ),
         url(assets/football-field.jpg);
 }
+
+/* projects strip on home page */
 
 #projectsStrip{
     display: flex;
@@ -99,6 +115,8 @@ button:hover{
         url(assets/binary-code.jpg);
 }
 
+/* large section containing textbox in about page */
+
 .aboutWriteUp{
     display: flex;
     justify-content: center;
@@ -109,9 +127,41 @@ button:hover{
             rgba(0,0,0,0.5),
             rgba(0,0,0,0.5)
         ),
-        url(assets/ocean.jpg);
-    border-bottom: solid 1px white;
+        url(assets/cloudySky.png);
+    border-bottom: solid 2px white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
 }
+
+/* second large section containing textbox in about page */
+
+.aboutWriteUp2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: 
+        linear-gradient(
+            to left,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ),
+        url(assets/canyon.jpeg);
+    border-bottom: solid 2px white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+}
+
+/* list text in about page */
+
+.listText{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+    color: white;
+}
+
+/* large section containing textbox in interests page */
 
 .interestsWriteUp{
     display: flex;
@@ -127,8 +177,10 @@ button:hover{
     border-bottom: solid 2px white;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
 }
+
+/* second large section containing textbox in interests page */
 
 .interestsWriteUp2{
     display: flex;
@@ -144,8 +196,10 @@ button:hover{
     border-bottom: solid 2px white;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
 }
+
+/* large section containing textbox in projects page */
 
 .projectsWriteUp{
     display: flex;
@@ -157,9 +211,62 @@ button:hover{
             rgba(0,0,0,0.5),
             rgba(0,0,0,0.5)
         ),
-        url(assets/binary-code.jpg);
+        url(assets/chip.jpg);
     border-bottom: solid 2px white;
 }
+
+/* large section in which project cards are stored */
+
+.projectsCompilation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image:
+    linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),
+    url(assets/codeComputer.jpg);
+    border-bottom: solid 2px white;
+}
+
+/* smaller section where projects cards are stored */
+
+.projectsContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    /* background-color: rgba(0,0,0,0.5) */
+}
+
+/* cards for projects */
+
+.projectsCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.5);
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.projectsTitle{
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.projectsText{
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+    text-align: center;
+}
+
+/* all textboxes */
 
 .textWriteUp{
     background-color: rgba(0,0,0,0.75);
@@ -173,6 +280,8 @@ button:hover{
     text-indent: 30px;
 }
 
+/* all text in subpage textboxes */
+
 .pageText{
     font-weight: 300;
     color: white;
@@ -182,6 +291,8 @@ button:hover{
     padding-left:30px;
     padding-right: 30px;
 }
+
+/* video in interests page */
 
 .video{
     display: flex;
@@ -195,4 +306,76 @@ button:hover{
             rgba(0,0,0,0.5)
         ),
         url(assets/football-field.jpg);
+}
+
+/* contact strip at bottom of page */
+
+#contactStrip{
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* styling for "Contact Me" */
+
+.contactTitle{
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.contactText{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+    color: white;
+    text-align: center;
+}
+
+/* profile picture */
+
+.pfp{
+    border-radius: 50%;
+    border: solid 2px white;
+}
+
+/* styling for social media icons */
+
+.socials{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+i{
+    margin: 10px;
+    color: white;
+}
+
+i:link{
+    color: white;
+}
+
+i:visited{
+    color: white;
+}
+
+/* home icon */
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* optional (unused) buffer */
+
+.buffer{
+    background-color: black;
+    height: 100px;
+    border-bottom: solid 2px white;
 }
